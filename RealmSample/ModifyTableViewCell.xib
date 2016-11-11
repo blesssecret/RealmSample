@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="ModifyTableViewCell" customModule="RealmSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wenye, yu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-ae-ic2">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5tb-CT-aHO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                        <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmr-vo-gyw">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="c8n-A8-rT5"/>
+                            <constraint firstAttribute="height" constant="30" id="eFi-is-ER3"/>
+                        </constraints>
+                        <state key="normal" title="Delete">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="actionDelete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xjo-of-lDy"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-nu-nIH">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="KXI-MR-HBS"/>
+                            <constraint firstAttribute="width" constant="55" id="qwH-nz-WmQ"/>
+                        </constraints>
+                        <state key="normal" title="Update"/>
+                        <connections>
+                            <action selector="actionUpdate:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rWd-sZ-8cg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TGM-ae-ic2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HOZ-ef-S40"/>
+                    <constraint firstItem="gmr-vo-gyw" firstAttribute="leading" secondItem="rCa-nu-nIH" secondAttribute="trailing" constant="8" id="Htg-dy-HC2"/>
+                    <constraint firstItem="gmr-vo-gyw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TJi-Mi-1VI"/>
+                    <constraint firstItem="gmr-vo-gyw" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ZNk-Wo-YzC"/>
+                    <constraint firstItem="rCa-nu-nIH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fk7-od-ve4"/>
+                    <constraint firstItem="TGM-ae-ic2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tGY-HX-dgY"/>
+                    <constraint firstItem="rCa-nu-nIH" firstAttribute="leading" secondItem="TGM-ae-ic2" secondAttribute="trailing" constant="16" id="ufc-aF-KfS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelTitle" destination="TGM-ae-ic2" id="xyN-y9-dO7"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="64"/>
+        </tableViewCell>
+    </objects>
+</document>
